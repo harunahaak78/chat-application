@@ -1,9 +1,9 @@
-
+import { Link } from "react-router-dom";
 const Navbar = () => {
     return(
         <nav className="navbar navbar-expand-lg navbar-dark">
       <div className="container-fluid">
-        <a className="navbar-brand fw-bold" href="#">
+        <a className="navbar-brand fw-bold" href="www.haak.com">
           
         </a>
         <button
@@ -23,29 +23,29 @@ const Navbar = () => {
             style={{ "--bs-scroll-height": "100px" }}
           >
             <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="#">
+               <Link to= "/" className="nav-link active" >
                   Home
-                </a>
+                </Link>
             </li>
             <li className="nav-item">
-                <a className="nav-link" href="#">
+                <a className="nav-link" href="www.profile.com">
                   Profile
                 </a>
             </li>
             <li className="nav-item">
-                <a className="nav-link" href="#">
+                <a className="nav-link" href="https/www.haaak.com">
                   Chat Room
                 </a>
             </li>
           </ul>
         </div>
-        <div className="toast position-fixed bottom-0 end-0 p-3" style={{'z-index': '11'}}>
+        <div className="toast position-fixed bottom-0 end-0 p-3" style={{"zindex": "11"}}>
             <div className="toast-header ">
-                <strong class="me-auto">New Message</strong>
+                <strong className="me-auto">New Message</strong>
                 <small>Just now</small>
                 <button type="button" className="btn-close" data-bs-dismiss="toast"></button>
             </div>
-            <div classNameC="toast-body">
+            <div className="toast-body">
                 You have a new message from User1.
             </div>
         </div>
