@@ -33,9 +33,9 @@ const Navbar = () => {
                 </a>
             </li>
             <li className="nav-item">
-                <a className="nav-link" href="https/www.haaak.com">
+                <Link to="/chatroom" className="nav-link" href="https/www.haaak.com">
                   Chat Room
-                </a>
+                </Link>
             </li>
           </ul>
         </div>
